@@ -8,3 +8,5 @@ const tossBlue = const Color(0xff267dff);
 const otherWhite = const Color(0xfffdfdfd);
 
 const shadowGray =  Color.fromARGB(255,158,158,158);
+
+const redAccent = Colors.redAccent;

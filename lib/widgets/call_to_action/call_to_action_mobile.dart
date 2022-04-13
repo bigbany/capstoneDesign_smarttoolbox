@@ -5,9 +5,13 @@ class CallToActionMobile extends StatelessWidget {
   final String title;
   const CallToActionMobile(this.title);
 
+
   @override
   Widget build(BuildContext context) {
+
+    var screenSize = MediaQuery.of(context).size;
     return  Container(
+      width: screenSize.width*0.8,
       height: 60,
       alignment: Alignment.center,
       child: TextButton(

@@ -33,9 +33,8 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
+ 
+
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
@@ -99,6 +98,30 @@
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
+
+
+    
   </script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+<!-- Firebase Configuration -->
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBhYBNcOlvOH_eSFd7wWYrJq1Xvp2EjOdM",
+    authDomain: "smarttoolbox-8a98f.firebaseapp.com",
+    projectId: "smarttoolbox-8a98f",
+    storageBucket: "smarttoolbox-8a98f.appspot.com",
+    messagingSenderId: "538736199271",
+    appId: "1:538736199271:web:b82bfa776b5af2bfaf36c2",
+    measurementId: "G-V1BD6B9VV9"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
 </body>
 </html>
